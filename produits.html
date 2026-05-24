@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AL AQEEQ Glass & Aluminium - Portes, fenêtres, vitrerie, miroiterie, vitrines, rampes et grilles en aluminium à Madagascar.">
+  <title>Produits & Services - AL AQEEQ Glass & Aluminium</title>
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <style>
+    .product-hero-card {
+      background: var(--white);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: 1px solid var(--grey-al);
+      transition: var(--transition);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .product-hero-card:nth-child(even) { direction: rtl; }
+    .product-hero-card:nth-child(even) > * { direction: ltr; }
+    .product-hero-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: transparent; }
+    .product-card-img { height: 320px; object-fit: cover; width: 100%; }
+    .product-card-body { padding: 44px; display: flex; flex-direction: column; justify-content: center; }
+    .product-num { font-family: var(--font-main); font-size: 3.5rem; font-weight: 800; color: var(--grey-al); line-height: 1; margin-bottom: 16px; }
+    .product-title { font-family: var(--font-main); font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+    .product-desc { font-size: .92rem; color: var(--grey-steel); line-height: 1.8; margin-bottom: 20px; }
+    .product-features { display: flex; flex-direction: column; gap: 8px; }
+    .product-feature { display: flex; align-items: center; gap: 10px; font-size: .87rem; color: var(--grey-dark); }
+    .product-feature svg { width: 16px; height: 16px; color: var(--cyan); flex-shrink: 0; }
+
+    .process-step { display: flex; gap: 24px; align-items: flex-start; padding: 28px; border-radius: var(--r-md); background: var(--white); border: 1px solid var(--grey-al); transition: var(--transition); }
+    .process-step:hover { box-shadow: var(--shadow-md); border-color: var(--cyan); }
+    .process-num { font-family: var(--font-main); font-size: 2rem; font-weight: 800; color: var(--cyan); flex-shrink: 0; width: 48px; }
+
+    @media (max-width: 768px) {
+      .product-hero-card { grid-template-columns: 1fr; }
+      .product-hero-card:nth-child(even) { direction: ltr; }
+      .product-card-body { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+
+<div class="page-banner">
+  <div class="container">
+    <p class="section-tag" style="color:var(--cyan);">Ce que nous faisons</p>
+    <h1 class="page-banner-title">Produits &amp; Services</h1>
+    <nav class="breadcrumb"><a href="index.html">Accueil</a><span>&#8250;</span><span>Produits &amp; Services</span></nav>
+  </div>
+</div>
+
+<!-- Intro -->
+<section class="section section-light">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;" data-animate>
+    <p class="section-tag">Notre savoir-faire</p>
+    <h2 class="section-title">Conception, fabrication &amp; pose</h2>
+    <p class="section-sub" style="margin:0 auto;">Nous assurons l'intégralité du processus, de la conception sur-mesure à l'installation finale, pour des résultats impeccables qui durent.</p>
+  </div>
+</section>
+
+<!-- Products -->
+<section class="section section-white" style="padding-top:0;">
+  <div class="container">
+    <div style="display:flex;flex-direction:column;gap:24px;">
+
+      <!-- 1 -->
+      <div class="product-hero-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Portes et fenêtres aluminium" class="product-card-img">
+        <div class="product-card-body">
+          <div class="product-num">01</div>
+          <h3 class="product-title">Portes &amp; Fenêtres</h3>
+          <p class="product-desc">Fabrication sur-mesure de portes et fenêtres en aluminium haute performance. Alliant esthétique contemporaine et isolation optimale pour tous types de bâtiments.</p>
+          <div class="product-features">
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Aluminium thermolaqué couleur au choix</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Simple ou double vitrage disponible</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Finition et pose incluses</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Certification CE garantie</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="product-hero-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=85" alt="Vitrerie miroiterie" class="product-card-img">
+        <div class="product-card-body">
+          <div class="product-num">02</div>
+          <h3 class="product-title">Vitrerie &amp; Miroiterie</h3>
+          <p class="product-desc">Large gamme de vitres et miroirs pour tous vos projets résidentiels et commerciaux. Découpe sur-mesure, pose professionnelle et finitions soignées.</p>
+          <div class="product-features">
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Verre feuilleté et trempé</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Miroirs décoratifs sur-mesure</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Verre dépoli et sablé</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Pose et scellement inclus</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="product-hero-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1441986380878-c4248f5b8b5b?w=800&q=80" alt="Vitrines et présentoirs" class="product-card-img">
+        <div class="product-card-body">
+          <div class="product-num">03</div>
+          <h3 class="product-title">Vitrines &amp; Présentoirs</h3>
+          <p class="product-desc">Conception et fabrication de vitrines commerciales et présentoirs professionnels pour mettre en valeur vos produits en boutique, pharmacie ou showroom.</p>
+          <div class="product-features">
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Design personnalisé selon vos besoins</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Aluminium et verre premium</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Éclairage LED intégrable</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Livraison et installation</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="product-hero-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Menuiserie aluminium" class="product-card-img">
+        <div class="product-card-body">
+          <div class="product-num">04</div>
+          <h3 class="product-title">Menuiserie Aluminium</h3>
+          <p class="product-desc">Cloisons, séparations et ouvrages en aluminium sur mesure pour habitats, bureaux et espaces professionnels. Résistance, légèreté et esthétique garanties.</p>
+          <div class="product-features">
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Cloisons vitrées et opaques</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Volets roulants et jalousies</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Parois de douche et baignoire</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Couleur RAL sur demande</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="product-hero-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=85" alt="Rampes et balcons" class="product-card-img">
+        <div class="product-card-body">
+          <div class="product-num">05</div>
+          <h3 class="product-title">Rampes &amp; Balcons</h3>
+          <p class="product-desc">Garde-corps, rampes d'escalier et balustrades en aluminium et verre. Sécurité maximale avec un design épuré et moderne, adapté à tous les environnements.</p>
+          <div class="product-features">
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Aluminium anodisé ou thermolaqué</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Combinaison verre trempé disponible</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Conformes aux normes de sécurité</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Pose par nos techniciens certifiés</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="product-hero-card" data-animate>
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Grilles de protection" class="product-card-img">
+        <div class="product-card-body">
+          <div class="product-num">06</div>
+          <h3 class="product-title">Grilles de Protection</h3>
+          <p class="product-desc">Grilles de sécurité pour fenêtres, portes et façades, ainsi que séparations de bureau en aluminium. Robustesse et finition soignée pour une protection durable.</p>
+          <div class="product-features">
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Modèles standard et sur-mesure</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Grilles fixes ou coulissantes</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Traitement anti-corrosion</div>
+            <div class="product-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20,6 9,17 4,12"/></svg>Installation rapide et soignée</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section section-light">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto 60px;" data-animate>
+      <p class="section-tag">Comment ça marche</p>
+      <h2 class="section-title">Notre processus de travail</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step" data-animate data-animate-delay="1">
+        <div class="process-num">01</div>
+        <div>
+          <h4 style="font-family:var(--font-main);font-weight:700;color:var(--navy);margin-bottom:8px;">Consultation &amp; devis</h4>
+          <p style="font-size:.88rem;color:var(--grey-steel);line-height:1.7;">Nous étudions votre projet, prenons les mesures nécessaires et vous fournissons un devis détaillé et gratuit.</p>
+        </div>
+      </div>
+      <div class="process-step" data-animate data-animate-delay="2">
+        <div class="process-num">02</div>
+        <div>
+          <h4 style="font-family:var(--font-main);font-weight:700;color:var(--navy);margin-bottom:8px;">Conception sur-mesure</h4>
+          <p style="font-size:.88rem;color:var(--grey-steel);line-height:1.7;">Notre équipe de design élabore les plans et sélectionne les matériaux selon vos spécifications et préférences.</p>
+        </div>
+      </div>
+      <div class="process-step" data-animate data-animate-delay="3">
+        <div class="process-num">03</div>
+        <div>
+          <h4 style="font-family:var(--font-main);font-weight:700;color:var(--navy);margin-bottom:8px;">Fabrication en atelier</h4>
+          <p style="font-size:.88rem;color:var(--grey-steel);line-height:1.7;">Nos techniciens fabriquent vos ouvrages dans notre atelier avec des équipements de précision et des matériaux certifiés CE.</p>
+        </div>
+      </div>
+      <div class="process-step" data-animate data-animate-delay="4">
+        <div class="process-num">04</div>
+        <div>
+          <h4 style="font-family:var(--font-main);font-weight:700;color:var(--navy);margin-bottom:8px;">Installation &amp; SAV</h4>
+          <p style="font-size:.88rem;color:var(--grey-steel);line-height:1.7;">Nos équipes assurent une pose professionnelle et un service après-vente réactif pour votre tranquillité d'esprit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container" style="text-align:center;">
+    <h2 class="cta-title" data-animate>Un projet en tête ?</h2>
+    <p class="cta-sub" data-animate>Contactez-nous pour discuter de vos besoins et recevoir un devis personnalisé.</p>
+    <div class="cta-actions" data-animate>
+      <a href="contact.html" class="btn btn-primary">Demander un devis gratuit</a>
+      <a href="realisations.html" class="btn btn-outline">Voir nos réalisations</a>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+  <script>
+/* ============================================================
+   AL AQEEQ - Nav & Footer Injection v2
+   ============================================================ */
+
+/* SVG icons for WhatsApp social */
+const WA_ICON = `<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>`;
+
+const NAV_HTML = `
+<nav class="navbar transparent">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.webp" alt="Al Aqeeq" onerror="this.style.display='none'">
+      
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html">À Propos</a></li>
+      <li><a href="produits.html">Produits &amp; Services</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="conseils.html">Nos Conseils</a></li>
+      <li><a href="contact.html" class="nav-devis">Devis Gratuit</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <button class="mobile-menu-close" aria-label="Fermer">&times;</button>
+  <a href="index.html">Accueil</a>
+  <a href="apropos.html">À Propos</a>
+  <a href="produits.html">Produits &amp; Services</a>
+  <a href="realisations.html">Réalisations</a>
+  <a href="conseils.html">Nos Conseils</a>
+  <a href="contact.html">Contact &amp; Devis</a>
+</div>`;
+
+const FOOTER_HTML = `
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-wrap">
+          <img src="images/logo.webp" alt="Al Aqeeq" onerror="this.style.display='none'">
+          <div class="footer-brand">AL AQEEQ<small>GLASS &amp; ALUMINIUM</small></div>
+        </div>
+        <p class="footer-desc">La qualité parle d'elle-même. Spécialiste malgache de la menuiserie aluminium et de la vitrerie depuis 2017. Certification CE.</p>
+        <div class="social-row">
+          <a href="https://web.facebook.com/profile.php?id=61560623292780" target="_blank" class="social-ico social-fb" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="white" width="18" height="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/alaqeeq110/" target="_blank" class="social-ico social-ig" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white"/></svg>
+          </a>
+          <a href="https://wa.me/261340223002" target="_blank" class="social-ico social-wa" aria-label="WhatsApp">
+            ${WA_ICON}
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-h">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À Propos</a></li>
+          <li><a href="produits.html">Produits &amp; Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="conseils.html">Nos Conseils</a></li>
+          <li><a href="contact.html">Contact &amp; Devis</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-h">Nos Spécialités</p>
+        <ul class="footer-links">
+          <li><a href="produits.html">Fenêtres Aluminium</a></li>
+          <li><a href="produits.html">Portes Aluminium</a></li>
+          <li><a href="produits.html">Vitrerie &amp; Miroiterie</a></li>
+          <li><a href="produits.html">Vitrines Commerciales</a></li>
+          <li><a href="produits.html">Garde-corps &amp; Rampes</a></li>
+          <li><a href="produits.html">Grilles &amp; Cloisons</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-h">Contact</p>
+        <ul class="footer-links">
+          <li><a href="tel:+261340223002">034 02 230 02 (WhatsApp)</a></li>
+          <li><a href="tel:+261389860802">038 98 608 02</a></li>
+          <li><a href="mailto:alaqeeqglass@gmail.com">alaqeeqglass@gmail.com</a></li>
+          <li style="color:rgba(255,255,255,.35);font-size:.84rem;margin-top:10px;line-height:1.6;">Saify Park, Anosizato<br>Entrepôt A3 - Antananarivo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 AL AQEEQ Glass &amp; Aluminium. Tous droits réservés.</span>
+      <span>Certification <strong style="color:#00B7F1">CE</strong> - Qualité Internationale</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/261340223002" target="_blank" class="wa-fab" aria-label="WhatsApp">
+  ${WA_ICON}
+</a>`;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navTarget    = document.getElementById('navbar-placeholder');
+  const footerTarget = document.getElementById('footer-placeholder');
+  if (navTarget)    navTarget.innerHTML    = NAV_HTML;
+  if (footerTarget) footerTarget.innerHTML = FOOTER_HTML;
+
+  /* Navbar scroll */
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    const onScroll = () => {
+      const s = window.scrollY > 50;
+      navbar.classList.toggle('scrolled', s);
+      navbar.classList.toggle('transparent', !s);
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+  }
+
+  /* Active link */
+  const page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === page) a.classList.add('active');
+  });
+
+  /* Mobile menu */
+  const ham   = document.querySelector('.nav-hamburger');
+  const mob   = document.querySelector('.mobile-menu');
+  const close = document.querySelector('.mobile-menu-close');
+  if (ham && mob) {
+    ham.addEventListener('click', () => { mob.classList.add('open'); document.body.style.overflow='hidden'; });
+    const closeMenu = () => { mob.classList.remove('open'); document.body.style.overflow=''; };
+    close?.addEventListener('click', closeMenu);
+    mob.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  }
+
+  /* Hero bg parallax load */
+  const hero = document.querySelector('.hero');
+  if (hero) setTimeout(() => hero.classList.add('loaded'), 100);
+
+  /* Scroll animations */
+  const els = document.querySelectorAll('[data-animate]');
+  if (els.length) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, {threshold: 0.1});
+    els.forEach(el => io.observe(el));
+  }
+
+  /* Counter animation */
+  const counters = document.querySelectorAll('[data-count]');
+  if (counters.length) {
+    const co = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !e.target.dataset.done) {
+          e.target.dataset.done = '1';
+          const target = +e.target.dataset.count;
+          const suffix = e.target.dataset.suffix || '';
+          let start = 0; const dur = 1600;
+          const t0 = performance.now();
+          const tick = (now) => {
+            const p = Math.min((now - t0) / dur, 1);
+            const ease = 1 - Math.pow(1 - p, 3);
+            e.target.textContent = Math.floor(ease * target) + suffix;
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+      });
+    }, {threshold: 0.5});
+    counters.forEach(el => co.observe(el));
+  }
+});
+
+
+/* ── main.js ── */
+/* ============================================================
+   AL AQEEQ - Main JS v2
+   ============================================================ */
+
+/* Gallery filter */
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.filter;
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      const show = cat === 'all' || item.dataset.cat === cat;
+      item.style.transition = 'opacity .3s, transform .3s';
+      if (show) {
+        item.style.display = '';
+        requestAnimationFrame(() => { item.style.opacity='1'; item.style.transform='scale(1)'; });
+      } else {
+        item.style.opacity='0'; item.style.transform='scale(.97)';
+        setTimeout(() => { if (item.style.opacity==='0') item.style.display='none'; }, 310);
+      }
+    });
+  });
+});
+
+/* Lightbox */
+const lightbox = document.querySelector('.lightbox');
+const lbImg    = lightbox?.querySelector('img');
+const galleryItems = [...document.querySelectorAll('.gallery-item')];
+let lbIndex = 0;
+
+galleryItems.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    lbIndex = i;
+    if (lbImg) lbImg.src = item.querySelector('img').src;
+    lightbox?.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+if (lightbox) {
+  lightbox.querySelector('.lightbox-close')?.addEventListener('click', closeLb);
+  lightbox.querySelector('.lb-prev')?.addEventListener('click', () => navigate(-1));
+  lightbox.querySelector('.lb-next')?.addEventListener('click', () => navigate(1));
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLb(); });
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') navigate(-1);
+    if (e.key === 'ArrowRight') navigate(1);
+  });
+}
+
+function closeLb() {
+  lightbox?.classList.remove('open');
+  document.body.style.overflow = '';
+}
+function navigate(dir) {
+  const visible = galleryItems.filter(i => i.style.display !== 'none');
+  const idx = visible.indexOf(galleryItems[lbIndex]);
+  const next = (idx + dir + visible.length) % visible.length;
+  lbIndex = galleryItems.indexOf(visible[next]);
+  if (lbImg) lbImg.src = visible[next].querySelector('img').src;
+}
+
+/* Devis form → WhatsApp */
+const devisForm = document.getElementById('devisForm');
+if (devisForm) {
+  devisForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const g = name => devisForm.querySelector(`[name="${name}"]`)?.value || '';
+    const text = [
+      'Bonjour AL AQEEQ Glass & Aluminium,',
+      '',
+      'Je souhaite recevoir un devis :',
+      '',
+      `Nom : ${g('nom')}`,
+      `Téléphone : ${g('tel')}`,
+      `Email : ${g('email')}`,
+      `Service : ${g('service')}`,
+      `Surface : ${g('surface')}`,
+      `Ville : ${g('ville')}`,
+      '',
+      `Détails : ${g('message')}`,
+    ].join('
+');
+    window.open(`https://wa.me/261340223002?text=${encodeURIComponent(text)}`, '_blank');
+    const msg = document.getElementById('successMsg');
+    if (msg) msg.style.display = 'block';
+    devisForm.reset();
+  });
+}
+
+/* FAQ accordion */
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+/* Smooth anchor scroll */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+});
+
+  </script>
+</body>
+</html>
